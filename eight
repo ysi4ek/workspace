@@ -1,5 +1,5 @@
-package type7;
-public class type7 {
+package type8;
+public class type8 {
 	    public static void main(String[] args) {
 	        int n = 5;
 	        int i;
