@@ -1,0 +1,25 @@
+package babo4ka;
+
+public class babo4ka {
+	public static void main(String[] args) {
+		 int x[][]=new int[4][8], y, z;
+	     for (y=0;y<x.length/2;y++){
+	    	 for (z=0;z<x[y].length;z++){ 	    		 	    		 
+	    		 if ((z<y) || (z>=(x[y].length-y))) 	    			 
+	    			 x[y][z]=0;
+	    		 else x[y][z]=1;}     
+	        }
+	        for (y=x.length-1; y>=x.length/2; y--){
+	              for (z=0; z<x[y].length; z++){
+	                if ((z<(x[y].length-1-y)) || (z>y))
+	                  x[y][z]=0;
+	                else x[y][z]=1;
+	              }
+	        }
+	        for (y=0;y<x.length;y++){
+	            for(z=0;z<x[y].length;z++){
+	                System.out.print(x[y][z]  );
+	            }
+	            System.out.println("   ");
+	        }
+	     } 
