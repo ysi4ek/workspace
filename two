@@ -1,0 +1,19 @@
+package two;
+
+public class two {
+	public static void main(String[] args) {
+		int x;
+		x=127;
+		if (x>=100 & x<=1000)
+		System.out.println("Число трёхзначное");
+		else System.out.println("Число не является трёхзначным");
+		
+		if (x%10 == 7)
+		System.out.println("последняя цифра 7");
+		else System.out.println("последняя цифра не 7");
+		
+		if (x%2 == 0)
+			System.out.println("число четное");
+		else System.out.println("число не четное");
+	}
+}
