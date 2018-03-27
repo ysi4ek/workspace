@@ -1,0 +1,19 @@
+package by.Home.zadacha4_DZ_2;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Zadacha4_DZ_2 {
+public static void main(String[] args) {
+	String str="it is ,necessary to find, all the punctuation: marks- in the text.?!";	
+	
+	Pattern a=Pattern.compile("[.,:;?!\"-]");
+	Matcher b=a.matcher(str);
+	int marksCounter=0;
+	while(b.find()){
+		marksCounter++;
+	}
+	System.out.println(marksCounter+" punctuation marks");
+	
+}
+}
